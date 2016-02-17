@@ -15,6 +15,7 @@
 		4D98E6F71C74CC9D0094EFE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D98E6F61C74CC9D0094EFE4 /* Images.xcassets */; };
 		4D98E6FA1C74CC9D0094EFE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D98E6F81C74CC9D0094EFE4 /* LaunchScreen.xib */; };
 		4D98E7061C74CCA00094EFE4 /* TableViewPracTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D98E7051C74CCA00094EFE4 /* TableViewPracTests.m */; };
+		4D98E7101C74DDD90094EFE4 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D98E70F1C74DDD90094EFE4 /* creme_brelee.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4D98E6FF1C74CC9F0094EFE4 /* TableViewPracTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewPracTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D98E7041C74CC9F0094EFE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D98E7051C74CCA00094EFE4 /* TableViewPracTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewPracTests.m; sourceTree = "<group>"; };
+		4D98E70F1C74DDD90094EFE4 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		4D98E6E51C74CC950094EFE4 /* TableViewPrac */ = {
 			isa = PBXGroup;
 			children = (
+				4D98E70F1C74DDD90094EFE4 /* creme_brelee.jpg */,
 				4D98E6EA1C74CC970094EFE4 /* AppDelegate.h */,
 				4D98E6EB1C74CC970094EFE4 /* AppDelegate.m */,
 				4D98E6F01C74CC990094EFE4 /* ViewController.h */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D98E6F51C74CC9A0094EFE4 /* Main.storyboard in Resources */,
+				4D98E7101C74DDD90094EFE4 /* creme_brelee.jpg in Resources */,
 				4D98E6FA1C74CC9D0094EFE4 /* LaunchScreen.xib in Resources */,
 				4D98E6F71C74CC9D0094EFE4 /* Images.xcassets in Resources */,
 			);
