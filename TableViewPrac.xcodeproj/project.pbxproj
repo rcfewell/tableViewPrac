@@ -494,6 +494,7 @@
 				4D98E70B1C74CCA00094EFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D98E70C1C74CCA00094EFE4 /* Build configuration list for PBXNativeTarget "TableViewPracTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +503,7 @@
 				4D98E70E1C74CCA00094EFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

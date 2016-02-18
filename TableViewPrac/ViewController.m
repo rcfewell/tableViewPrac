@@ -11,7 +11,7 @@
 
 @interface ViewController ()
 {
-    NSArray * recipes;
+    NSMutableArray * recipes;
     NSArray * thumbnails;
     NSArray * prepTimes;
 }
@@ -24,7 +24,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    recipes = [NSArray arrayWithObjects:@"Eggs Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwhich", @"Creme Brulee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
+    recipes = [NSMutableArray arrayWithObjects:@"Eggs Benedict", @"Mushroom Risotto", @"Full Breakfast", @"Hamburger", @"Ham and Egg Sandwhich", @"Creme Brulee", @"White Chocolate Donut", @"Starbucks Coffee", @"Vegetable Curry", @"Instant Noodle with Egg", @"Noodle with BBQ Pork", @"Japanese Noodle with Pork", @"Green Tea", @"Thai Shrimp Cake", @"Angry Birds Cake", @"Ham and Cheese Panini", nil];
     
     thumbnails = [NSArray arrayWithObjects:@"egg_benedict.jpg", @"mushroom_risotto.jpg", @"full_breakfast.jpg", @"hamburger.jpg", @"ham_and_egg_sandwich.jpg", @"creme_brelee.jpg", @"white_chocolate_donut.jpg", @"starbucks_coffee.jpg", @"vegetable_curry.jpg", @"instant_noodle_with_egg.jpg", @"noodle_with_bbq_pork.jpg", @"japanese_noodle_with_pork.jpg", @"green_tea.jpg", @"thai_shrimp_cake.jpg", @"angry_birds_cake.jpg", @"ham_and_cheese_panini.jpg", nil];
     prepTimes = [NSArray arrayWithObjects:@"30 min", @"1 hour", @"25 min", @"30 min", @"45 min", @"20 min", @"2 hours", @"5 min", @"1 hour 15 min", @"2 min", @"35 min", @"30 min", @"5 min", @"25 min", @"40 min", @"30 min", nil];
@@ -81,6 +81,14 @@
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [recipes removeObjectAtIndex:indexPath.row];
+    
+    [tableView reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning
